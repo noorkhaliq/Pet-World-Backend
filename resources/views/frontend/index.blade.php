@@ -7,10 +7,8 @@
                 <div class="col-md-12">
                     <div class=" banner_main w-100 ">
                         <div class="bluid text-center pt-5 position-relative ">
-                            @foreach($header as $head)
-                            <h1 class="mt-5">{{$head->title}} </h1>
-                            <p>{!! $head->description !!}</p>
-                            @endforeach
+                            <h1 class="mt-5">{{$header?->title}} </h1>
+                            <p>{!! $header?->description !!}</p>
                         </div>
                     </div>
                 </div>
@@ -50,11 +48,9 @@
             <div class="row d_flex ">
                 <div class="col-md-6">
                     <div class="titlepage ">
-                        @foreach($about as $a)
-                        <span>{{$a->title}}</span>
-                        <h2 class="text-light">{{$a->description}} </h2>
+                        <span>{{$about->title}}</span>
+                        <p class="text-light">{{ \Illuminate\Support\Str::words($about->description, 100) }} </p>
                         <a class="read_more nav-link " href="{{route('front.about','about-us')}}">Read More</a>
-                        @endforeach
                     </div>
                 </div>
             </div>

@@ -96,6 +96,9 @@
             <div class="row">
                 <div class="col-lg-5 foot_headers">
                     <h3>About</h3>
+                    <p>
+                        {{ \Illuminate\Support\Str::words($frontControllerObject->getAboutDescription(), 40) }}
+                    </p>
                     <ul class="conta navbar-nav ">
                         @php
                         $address =$frontControllerObject->getAddress();

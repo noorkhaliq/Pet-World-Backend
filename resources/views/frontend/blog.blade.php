@@ -21,6 +21,12 @@
                 </div>
                 @endforeach
             </div>
+
+            <div class="row">
+                <div class="pagination">
+                    {{ $blog->links() }}
+                </div>
+            </div>
         </div>
     </div>
 

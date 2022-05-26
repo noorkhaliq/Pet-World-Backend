@@ -22,6 +22,10 @@
                 </div>
                 @endforeach
             </div>
+
+            <div class="nav pagination">
+                {{ $services->links() }}
+            </div>
         </div>
     </div>
 
