@@ -27,7 +27,8 @@ class FrontendController extends Controller
     {
         $page = Pages::whereSlug($slug)->firstOrFail();
 
-        return view('frontend.about', ['about' => $page]);    }
+        return view('frontend.about', ['about' => $page]);
+    }
 
     public function page($slug)
     {
