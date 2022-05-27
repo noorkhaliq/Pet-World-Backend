@@ -17,8 +17,12 @@ class FrontendController extends Controller
 
     public function index()
     {
-        return view('frontend.index', ['header'=>Pages::where('slug','top-header')->get(),'about' => Pages::where('slug','about-us')->get(),
-            'services' => Services::latest()->limit(3)->get(),'blog' => Blog::latest()->limit(4)->get()]);
+        return view('frontend.index', [
+            'header'=>Pages::where('slug', 'top-header')->first(),
+            'about' => Pages::where('slug', 'about-us')->first(),
+            'services' => Services::latest()->limit(3)->get(),
+            'blog' => Blog::latest()->limit(4)->get()
+        ]);
     }
 
 //return view('frontend.index', ['latest_posts' => Post::paginate(3) ,'news'=> News::latest()->limit(4)->get() ]);
@@ -39,7 +43,7 @@ class FrontendController extends Controller
 
     public function services()
     {
-        return view('frontend.services', ['services' => Services::latest()->limit(3)->get()]);
+        return view('frontend.services', ['services' => Services::paginate(6)]);
     }
 
     public function servicesDetail($slug)
@@ -55,7 +59,7 @@ class FrontendController extends Controller
 
     public function blog()
     {
-        return view('frontend.blog', ['blog' => Blog::latest()->limit(4)->get()]);
+        return view('frontend.blog', ['blog' => Blog::paginate(6)]);
     }
 
     public function blogDetail($slug)
@@ -68,6 +72,11 @@ class FrontendController extends Controller
     public function getAddress()
     {
         return Settings::where('type' , 'address')->get();
+    }
+
+    public function getAboutDescription()
+    {
+        return Pages::whereSlug('about-us')->value('description');
     }
 
     public function getSocial()
