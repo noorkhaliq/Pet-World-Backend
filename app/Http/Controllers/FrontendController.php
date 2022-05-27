@@ -10,7 +10,7 @@ use App\Models\Settings;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Validator;
+
 
 class FrontendController extends Controller
 {
@@ -59,7 +59,7 @@ class FrontendController extends Controller
 
     public function blog()
     {
-        return view('frontend.blog', ['blog' => Blog::paginate(6)]);
+        return view('frontend.blog', ['blog' => Blog::paginate(4)]);
     }
 
     public function blogDetail($slug)

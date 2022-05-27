@@ -5,7 +5,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage text-center mt-5">
-                        <h2 class=" position-relative">Our Blog</h2>
+                        <h2 class=" position-relative">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item "><a class="text-decoration-none" href="{{route('front.blog')}}">Blogs</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{{$blogs->title}}</li>
+                            </ul>
+                        </h2>
                     </div>
                 </div>
             </div>

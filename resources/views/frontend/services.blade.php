@@ -22,9 +22,8 @@
                 </div>
                 @endforeach
             </div>
-
-            <div class="nav pagination">
-                {{ $services->links() }}
+            <div class="mt-5">
+                {!! $services->links() !!}
             </div>
         </div>
     </div>

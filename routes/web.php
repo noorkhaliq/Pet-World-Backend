@@ -22,8 +22,8 @@ Route::get('blogs', [\App\Http\Controllers\FrontendController::class, 'blog'])->
 Route::get('blog/{slug}', [\App\Http\Controllers\FrontendController::class, 'blogDetail'])->name('front.blog.detail');
 Route::get('services', [\App\Http\Controllers\FrontendController::class, 'services'])->name('front.services');
 Route::get('service/{slug}', [\App\Http\Controllers\FrontendController::class, 'servicesDetail'])->name('front.services.detail');
-Route::get('front/terms', [\App\Http\Controllers\FrontendController::class, 'terms'])->name('front.terms');
-Route::get('front/privacy', [\App\Http\Controllers\FrontendController::class, 'privacy'])->name('front.privacy');
+Route::get('page/terms', [\App\Http\Controllers\FrontendController::class, 'terms'])->name('front.terms');
+Route::get('page/privacy', [\App\Http\Controllers\FrontendController::class, 'privacy'])->name('front.privacy');
 Route::get('front/test',[\App\Http\Controllers\FrontendController::class, 'test']);
 Route::post('contact/saves',[\App\Http\Controllers\FrontendController::class, 'saveNew'])->name('front.contact.save');
 
@@ -82,8 +82,6 @@ Route::prefix('admin')->group(function () {
         Route::put('blogs/update/{id}', [\App\Http\Controllers\BlogController::class, 'update'])->name('blog.update');
         Route::get('blogs/delete/{id}', [\App\Http\Controllers\BlogController::class, 'delete'])->name('blog.delete');
     });
-
-require __DIR__ . '/auth.php';
-
+    require __DIR__ . '/auth.php';
 });
 

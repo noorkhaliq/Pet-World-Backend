@@ -147,10 +147,8 @@ body {
     position: relative;
 }
 
-.term_and_condition {
-    background:url(../images/judge.jpg);
-    background-position: center;
-    background-size: cover;
+.terms {
+    background: linear-gradient(to bottom, #2889a9 0%, rgba(47, 44, 45, 0.77) 100%);
     padding: 90px 0;
     margin-top: 90px;
     position: relative;
