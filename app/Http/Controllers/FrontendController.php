@@ -25,7 +25,6 @@ class FrontendController extends Controller
         ]);
     }
 
-//return view('frontend.index', ['latest_posts' => Post::paginate(3) ,'news'=> News::latest()->limit(4)->get() ]);
 
     public function about($slug)
     {

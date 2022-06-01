@@ -37,7 +37,7 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|unique:users'
         ]);
-        $data = request()->only(['name', 'email', 'password']);
+        $data = request()->only(['name', 'email']);
 
         User::where('id', $id)->update($data);
         return redirect()->route('user.index');

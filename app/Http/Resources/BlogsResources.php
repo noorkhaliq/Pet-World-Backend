@@ -3,6 +3,7 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Str;
 
 class BlogsResources extends JsonResource
 {
@@ -17,7 +18,9 @@ class BlogsResources extends JsonResource
         return [
             'id'            => $this->id,
             'title'            => $this->title,
-            'description'            => $this->description,
+            'slug' => Str::slug($this->title),
+            'description'            => Str::words(strip_tags($this->description),30),
+            'descriptions'            => $this->description,
             'image' => $this->image ? asset('uploads/'.$this->image) : '',
             'created_at'    => $this->created_at->format('Y-m-d H:i:s'),
             'updated_at'    => $this->updated_at->format('Y-m-d H:i:s')

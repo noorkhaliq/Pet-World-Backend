@@ -13,11 +13,13 @@ class SocialController extends Controller
     {
         $address = Settings::where('type' , 'address')->get();
         $address = ['status' => true , 'data' => SocialResources::collection($address)];
-        $social = Settings::where('type', 'settings')->get();
-        $social = ['status' => true, 'data' => SocialResources::collection($social)];
+
+        $social = Settings::where('type' , 'social')->get();
+        $social = ['status' => true , 'data' => SocialResources::collection($social)];
+
         return [
           'address' =>  $address,
-          'settings' => $social,
+          'social'  =>   $social,
         ];
     }
 }

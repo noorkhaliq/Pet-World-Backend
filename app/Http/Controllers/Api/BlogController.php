@@ -4,18 +4,31 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\BlogsResources;
-use App\Http\Resources\PagesResources;
-use App\Models\About;
 use App\Models\Blog;
-use App\Models\Services;
-use Illuminate\Http\Request;
+use App\Models\Pages;
+
 
 class BlogController extends Controller
 {
-    public function blog()
+    public function blogsDetail($id)
     {
-        $blog = Blog::all();
-        return ['status' => true, 'data' => BlogsResources::collection($blog)];
+        $services  = Blog::find($id);
+        return ['status' => true , 'data' => new BlogsResources($services)];
+    }
+
+    public function blogs()
+    {
+        $project  = Blog::paginate(6);
+        return BlogsResources::collection($project);
+        return ['status' => true , 'data' => ''];
+    }
+
+    public function page($slug)
+    {
+        $page = Pages::whereSlug($slug)->firstOrFail();
+        return ['status' => true , 'data' => new BlogsResources($page)];
+
+
     }
 }
 

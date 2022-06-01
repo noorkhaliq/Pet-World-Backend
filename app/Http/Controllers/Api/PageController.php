@@ -29,14 +29,6 @@ class PageController extends Controller
         return ['status' => true , 'data' => ''];
 
 
-//        $categories = Pages::whereHas('services')->get();
-//        $categories = ['status' => true, 'data' => $categories];
-
-//        return
-//            [
-//                'services' => $project,
-////                'page_categories' => $categories
-//            ];
 
     }
 }
