@@ -20,6 +20,7 @@ class CreateSettingsTable extends Migration
             $table->string('image')->nullable();
             $table->string('type')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

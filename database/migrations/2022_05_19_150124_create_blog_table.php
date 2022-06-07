@@ -15,9 +15,10 @@ class CreateBlogTable extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 255)->nullable();
+            $table->string('title')->nullable();
             $table->text('description')->nullable();
-            $table->string('image', 200)->nullable();
+            $table->string('image')->nullable();
+            $table->string('slug')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

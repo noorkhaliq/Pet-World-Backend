@@ -39,18 +39,21 @@
                     {"data": "actions", searchable: false, orderable: false},
                 ]
             })
+
             $('body').on('click', '.deleteBlog', function (e) {
+                e.preventDefault();
+                var url = $(this).attr('href');
                 if (confirm("Are you sure?")) {
-                    var data = $(this).val();
-                    $.post('requests/seminars.php', {delete_sem: data}, function (data) {
-                        if (data == "delete") {
-                            location.reload();
-                        } else {
-                            alert(data);
+                    $.ajax({
+                        url: url,
+                        type: 'get',
+                        success: function() {
+                            table.ajax.reload();
                         }
-                    });
+                    })
                 }
             });
+
         });
     </script>
 

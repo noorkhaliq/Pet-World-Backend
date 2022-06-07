@@ -24,25 +24,27 @@ CREATE TABLE `blogs` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL,
-  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `blogs_slug_unique` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `blogs` */
 
-insert  into `blogs`(`id`,`title`,`description`,`created_at`,`updated_at`,`deleted_at`,`slug`) values 
-(33,'Rerum nihil ','Quod iste explicabo sunt molestiae. Perspiciatis et ab consequatur illo qui velit a. Doloribus dolores quaerat quia rerum aut omnis iusto. Molestiae suscipit nobis quasi modi excepturi delectus. Non et adipisci velit doloribus alias. Et aut sequi iste sint et non. Nam et quam itaque pariatur. Architecto est eaque eum atque quasi. Molestiae dolores quia nisi reiciendis natus. Consequuntur animi maxime tempora dolorem error.','2022-05-20 08:26:43','2022-05-20 08:26:43',NULL,'ut-natus-molestiae'),
-(34,'Nisi voluptatem ','Iste numquam voluptatem expedita perferendis quia. Quisquam magnam est sit deleniti dignissimos voluptatum quos. Nam repudiandae ipsam laborum porro optio atque est. Qui voluptatum aut quae sed. Non aut soluta voluptatibus unde sit dolorem omnis. Porro quam sed vel animi. Ut quod et blanditiis. Officiis itaque unde reprehenderit voluptas. At quo iste optio enim maxime perspiciatis. Non voluptate adipisci alias et quia nihil nemo.','2022-05-20 08:26:43','2022-05-20 08:26:43',NULL,'veritatis-eius-optio'),
-(35,'Expedita et  ','Dolorem eius voluptas rerum tempora quam ut. Accusantium maxime provident dolores. Eveniet repellat excepturi corporis sequi. Repudiandae et delectus itaque aperiam incidunt labore vitae beatae. Possimus tempore laboriosam fuga officiis voluptatem. Iusto sed saepe eum voluptatibus aut dolor. Autem veritatis qui quia ratione sit. Sequi a accusantium et. Officia qui mollitia repudiandae doloremque. Tenetur molestiae aut cum facere delectus dolorem voluptates.','2022-05-20 08:26:43','2022-05-20 08:26:43',NULL,'optio-neque-tempore'),
-(36,'Perspiciatis quisquam ','At suscipit aspernatur ipsa qui. Adipisci ut sint iure consequatur saepe id impedit. Cum suscipit tempore voluptas mollitia illum temporibus. Inventore expedita facere perferendis ratione. Alias id sunt veritatis quo minima. Inventore sit libero dolores non et. Atque repudiandae velit illum quibusdam eos rerum nihil. Quae et dolorum rerum exercitationem et quia. Qui veritatis aut eum consequatur delectus at unde. Consequatur eum repellendus ut ab ipsa maxime doloremque.','2022-05-20 08:26:43','2022-05-20 08:26:43',NULL,'non-est-maxime'),
-(37,'Voluptas qui ','Et est voluptate asperiores consequatur commodi. Amet molestias enim qui maiores voluptatibus in. Explicabo dignissimos velit porro eum. Corrupti vitae magni aut voluptatem quae inventore id. Quia error qui doloremque neque dolor. Et aut at non fugit eaque velit voluptates. Aliquid eligendi perferendis ut nulla et eos. Eum consequatur hic voluptas laudantium in accusamus. Voluptatem eligendi molestiae impedit qui. Ut eligendi incidunt culpa assumenda.','2022-05-20 08:26:43','2022-05-20 08:26:43',NULL,'quis-quisquam-porro'),
-(38,'Aut aut ad','Velit non ut dolore facilis repudiandae. Quae ut dolor autem vel et voluptate. Et corrupti et facilis explicabo. Dignissimos et id quia eum magnam corporis. Dolorem quasi itaque hic dolorem. Beatae dolor ullam tempora sit aut eos ipsa. Dolor molestiae ad dolores fugiat quis recusandae. Quo eos doloribus quo labore enim. Iste saepe nemo impedit velit hic quia. Sit alias assumenda non laborum recusandae libero.','2022-05-20 08:26:43','2022-05-21 23:09:51','2022-05-21 23:09:51','at-id-et'),
-(39,'Incidunt ut ','Sapiente velit fugit minus inventore minima quidem ipsam iusto. Quas et voluptatem dolorem nam harum occaecati delectus. Nostrum ipsa hic laborum magnam iure incidunt. Eum et fugit vel quam optio rerum eius. Consequatur tempora repellendus ut modi aspernatur laborum. Magni magni tempore quam nihil autem et. Blanditiis quidem qui maiores sit. Et corrupti labore consequatur. Soluta molestiae laudantium error quos. Odit quidem ipsa est ut perspiciatis.','2022-05-20 08:26:43','2022-05-20 08:26:43',NULL,'consequuntur-similique-voluptatum'),
-(40,'Tenetur deleniti','Eos molestiae recusandae nobis error alias ipsum qui. Fugiat soluta et quia. Vero eos sint earum beatae. Qui rem a omnis ut labore aut. Accusantium nihil accusantium voluptatem ut. Ea est quisquam ut hic consequatur. Iste velit vero consectetur dignissimos nam. Incidunt nam explicabo quisquam. Voluptatem hic laboriosam et architecto animi. Cupiditate non omnis dolorem sapiente.','2022-05-20 08:26:43','2022-05-20 08:26:43',NULL,'sit-hic-ut');
+insert  into `blogs`(`id`,`title`,`description`,`image`,`slug`,`created_at`,`updated_at`,`deleted_at`) values 
+(1,'deleniti quis','Dignissimos qui accusantium harum nesciunt. Sunt repellat velit ad. Accusamus facilis nam quis reiciendis. Consectetur iusto praesentium quis et earum. Necessitatibus culpa expedita et ut nostrum soluta. In nihil reiciendis et perspiciatis nulla ad. Quisquam reprehenderit et voluptatem incidunt. Qui deleniti mollitia similique non ea molestiae eius. Ad autem consequatur quae dolorum odio. Ut dolorem ut quibusdam et animi.',NULL,'et-quibusdam-cupiditate','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(2,'suscipit itaque','Qui ut exercitationem modi totam. Voluptates laborum nisi est autem repellat quia sit. Aut eaque ut inventore distinctio voluptate et. Et voluptas dolores a quibusdam. Hic maxime neque sit ut maxime magnam quam impedit. Aut excepturi quo officiis cupiditate consequatur qui blanditiis. Voluptatem sit autem distinctio voluptates dignissimos enim. Aperiam reprehenderit maxime laboriosam temporibus et fugiat eaque. Illum ut dolorem quae molestiae voluptatum dolorum. Est aut labore ut cupiditate.',NULL,'rerum-dignissimos-iure','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(3,'ipsam et','Commodi rerum consectetur quidem. Aspernatur natus perferendis ab. Sint animi veritatis perspiciatis. Aliquam voluptas ut officia modi libero doloremque fuga. Consequuntur et nulla ab suscipit vel et saepe reiciendis. Unde quos vitae sunt necessitatibus et. Quia et est praesentium et sunt. Eaque dolores nesciunt neque aliquid itaque. Commodi minus consequatur voluptas magnam. Pariatur cupiditate omnis natus.',NULL,'sapiente-est-ea','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(4,'iure ullam','Quia quis sint repellat commodi rerum doloribus. Tempore perferendis doloribus quas laudantium. Eligendi aut omnis autem saepe reiciendis. Quia molestiae nemo animi. Modi eum corrupti magnam cum laudantium amet. Culpa voluptates provident incidunt temporibus odio neque nemo. Eos minima perspiciatis ut aliquid. Illum soluta officiis sapiente aliquid enim et iste. Vel sed voluptatem unde eligendi eius alias. Hic deserunt perspiciatis minus sit.',NULL,'cumque-sunt-laborum','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(5,'omnis saepe','Provident et laudantium delectus totam ipsum enim. Deserunt illum exercitationem quia nam incidunt voluptate omnis. Commodi sit odio voluptatum commodi laboriosam dolore velit. Incidunt voluptatem dolorum error similique est. Enim laboriosam voluptatem aliquam. Rerum est a blanditiis ipsam. Ut sed sit qui dolorem omnis. Dignissimos ut quae doloremque sunt. Dicta velit recusandae et debitis praesentium. Sit nemo sint explicabo et tenetur.',NULL,'repellat-quia-eos','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(6,'laborum quae','Hic quas quia cupiditate non rem sit. Iste et autem explicabo quaerat. Commodi odio earum dolor labore. Quos praesentium inventore voluptate eius voluptatem quidem ducimus. Eligendi officia libero velit laborum. Pariatur officiis sunt enim reprehenderit saepe maxime. Delectus voluptate et velit voluptatum. Eos culpa eius nihil dicta vero. Veniam hic totam animi maiores temporibus rem. Debitis aut doloremque non repudiandae.',NULL,'officiis-recusandae-culpa','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(7,'aliquam molestias','Mollitia omnis rerum qui sint mollitia. Animi iusto animi qui ipsam pariatur non. Inventore omnis quas explicabo voluptatem velit architecto. Provident possimus sequi temporibus. Neque aliquam numquam ad porro. Deserunt omnis saepe nihil officiis at. Delectus cupiditate repellat sunt. Tempore praesentium officia sed deleniti aut architecto similique. Rerum numquam quasi reprehenderit voluptatem. Voluptatem consequuntur est nobis praesentium dolor quis.',NULL,'eveniet-exercitationem-in','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(8,'porro nostrum','Corporis eum dignissimos quas dolor minus corporis. Modi et consectetur iure distinctio possimus temporibus quam repellat. Inventore accusamus quisquam est expedita quos totam quia ut. Dolorem ratione dolorem aliquam id accusamus molestiae quis aliquid. Velit voluptatem labore asperiores modi iusto dolores quisquam. Vitae natus nesciunt sunt sed eaque quos rerum. Eos doloremque neque aut eaque quibusdam. Quod iure velit rerum totam ducimus illum. Ut veritatis rerum repellendus et sed nisi eveniet. Maiores cum velit consequatur voluptatem eligendi ducimus atque.',NULL,'excepturi-sequi-sint','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(9,'consequatur ratione','Ullam et ex rem laudantium. Dolor veniam aut exercitationem dolore vero at nemo. Quas sed harum tempore cumque blanditiis voluptas. Itaque odio quod vitae est enim praesentium. Veritatis tempore inventore quia corrupti. Sequi mollitia corrupti temporibus. Sit magnam eos distinctio sed suscipit nihil eius. Blanditiis sit ratione nihil ut adipisci. Ut ab rerum optio sit reprehenderit iure neque. Fuga qui qui necessitatibus necessitatibus non.',NULL,'corrupti-minus-aliquam','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(10,'iste tenetur','Repudiandae necessitatibus quia ut ullam ab. Eos facilis iusto praesentium inventore quae dolores eaque. Ipsum reprehenderit necessitatibus tempora suscipit quia. Maiores fugit consequatur provident at voluptas. Maxime totam et incidunt fugit. Deleniti velit iusto minus quia corporis. Dolore eaque ea voluptatem tempore. Velit vitae ullam deleniti totam sit iusto odio. Dolor at dolore consectetur ea. Incidunt voluptates facilis voluptas exercitationem.',NULL,'ipsa-assumenda-non','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL);
 
 /*Table structure for table `contactus` */
 
@@ -53,29 +55,18 @@ CREATE TABLE `contactus` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `message` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_replied` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `contactus` */
 
-insert  into `contactus`(`id`,`name`,`email`,`phone`,`message`,`created_at`,`updated_at`) values 
-(61,'jasgdsjahd','admin12121@admin.com','021232323232','asasa',NULL,NULL),
-(62,'hassgd','troy82@example.net','021232323232','sajdashd',NULL,NULL),
-(63,'Noor','admin12@admin.coms','021232323232','asasas',NULL,NULL),
-(64,'ashdgahsd','troy82@example.net','021232323232','sjdsdh',NULL,NULL),
-(65,'adas','troy82@example.net','021232323232','asasas',NULL,NULL),
-(66,'jdfhuhfd','adminwewe@admin.com','021232323232','asa',NULL,NULL),
-(67,'jaksfhj','adminwewe@admin.com','021232323232','sadasdas',NULL,NULL),
-(68,'dkfnklsdngkldfs','admin12@admin.com','12121','1212',NULL,NULL),
-(69,'Noor','sasasadmin@admin.com','122112121','dsdasd',NULL,NULL),
-(70,'asdasd','admin12@admin.com','021232323232','asa',NULL,NULL),
-(71,'Noor','adminwewe@admin.com','021232323232','asas',NULL,NULL),
-(72,'jhagdjfhf','admin12@admin.com','1212121','ssdsadasd',NULL,NULL),
-(73,'Noor','troy82@example.net','021232323232','zxz',NULL,NULL),
-(74,'Noor','adminwewe@admin.com','021232323232','\\sdasdasd',NULL,NULL);
+insert  into `contactus`(`id`,`name`,`email`,`phone`,`message`,`is_replied`,`created_at`,`updated_at`,`deleted_at`) values 
+(1,'Noo','admin@admin.com','021232323232','zx',NULL,NULL,NULL,NULL);
 
 /*Table structure for table `failed_jobs` */
 
@@ -104,21 +95,20 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `migrations` */
 
 insert  into `migrations`(`id`,`migration`,`batch`) values 
-(1,'2014_10_12_000000_create_users_table',1),
-(2,'2014_10_12_100000_create_password_resets_table',1),
-(3,'2019_08_19_000000_create_failed_jobs_table',1),
-(4,'2019_12_14_000001_create_personal_access_tokens_table',1),
-(5,'2022_05_12_074100_create_pages_table',1),
-(6,'2022_05_12_075148_create_settings_table',1),
-(7,'2022_05_12_075527_create_contactus_table',1),
-(8,'2022_05_15_014125_create_services_table',1),
-(9,'2022_05_19_150124_create_blog_table',1),
-(10,'2022_05_19_151938_update_blog_table',1);
+(19,'2014_10_12_000000_create_users_table',1),
+(20,'2014_10_12_100000_create_password_resets_table',1),
+(21,'2019_08_19_000000_create_failed_jobs_table',1),
+(22,'2019_12_14_000001_create_personal_access_tokens_table',1),
+(23,'2022_05_12_074100_create_pages_table',1),
+(24,'2022_05_12_075148_create_settings_table',1),
+(25,'2022_05_12_075527_create_contactus_table',1),
+(26,'2022_05_15_014125_create_services_table',1),
+(27,'2022_05_19_150124_create_blog_table',1);
 
 /*Table structure for table `pages` */
 
@@ -133,16 +123,17 @@ CREATE TABLE `pages` (
   `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `pages` */
 
-insert  into `pages`(`id`,`title`,`slug`,`image`,`description`,`type`,`created_at`,`updated_at`) values 
-(18,'Looking For a pet Care Center','about-us',NULL,'Find for Your Best Pet Care','page','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(20,'Terms and Condition','terms-and-conditions',NULL,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet justo, nec tempus lorem. Integer urna sapien, vulputate ac maximus eget, mollis id neque. Ut eu convallis arcu. Donec risus tortor, bibendum a lectus at, egestas posuere mi. In vel auctor risus, ut consequat orci. Nullam aliquet turpis eget suscipit tempor. Ut at orci nunc. Donec eu ante dapibus, scelerisque ligula vel, accumsan magna. Duis dignissim volutpat ex at gravida. Duis fermentum enim est, eu tempus turpis dapibus id. Aliquam condimentum sodales nisi tempus tempus. Vivamus fringilla ligula felis, ut efficitur neque facilisis congue. Cras pellentesque volutpat auctor. Quisque velit lacus, suscipit sit amet erat eu, lacinia blandit nunc. Aliquam ut eros iaculis, pellentesque tortor et, viverra nisl.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In augue massa, rutrum elementum lorem sed, tempus maximus lectus. Aenean tincidunt aliquam nibh blandit dapibus. Quisque fermentum enim blandit ante elementum fermentum. Nulla in malesuada nisl. Morbi ut auctor nisi, vitae congue purus. Phasellus eleifend, purus eget volutpat aliquam, ipsum enim porttitor ante, et vestibulum nibh sem ut nunc. In fermentum turpis orci, a ultricies dui ullamcorper nec.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean dictum mauris at luctus suscipit. Aenean ullamcorper orci in enim sagittis, et maximus quam venenatis. Proin bibendum dolor diam, vitae faucibus nunc pulvinar at. Mauris nunc erat, fringilla vitae nulla nec, lacinia vestibulum sem. Nulla nec nisl at risus aliquam venenatis eu lacinia lacus. Ut auctor nisi sit amet orci interdum, a finibus dolor fringilla. Maecenas sed lacus nisl. Ut blandit lorem urna, vel scelerisque tortor faucibus eget. Etiam nisi metus, placerat vel enim a, maximus semper libero.','page','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(21,'Privacy Policy','privacy-policy',NULL,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet justo, nec tempus lorem. Integer urna sapien, vulputate ac maximus eget, mollis id neque. Ut eu convallis arcu. Donec risus tortor, bibendum a lectus at, egestas posuere mi. In vel auctor risus, ut consequat orci. Nullam aliquet turpis eget suscipit tempor. Ut at orci nunc. Donec eu ante dapibus, scelerisque ligula vel, accumsan magna. Duis dignissim volutpat ex at gravida. Duis fermentum enim est, eu tempus turpis dapibus id. Aliquam condimentum sodales nisi tempus tempus. Vivamus fringilla ligula felis, ut efficitur neque facilisis congue. Cras pellentesque volutpat auctor. Quisque velit lacus, suscipit sit amet erat eu, lacinia blandit nunc. Aliquam ut eros iaculis, pellentesque tortor et, viverra nisl.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In augue massa, rutrum elementum lorem sed, tempus maximus lectus. Aenean tincidunt aliquam nibh blandit dapibus. Quisque fermentum enim blandit ante elementum fermentum. Nulla in malesuada nisl. Morbi ut auctor nisi, vitae congue purus. Phasellus eleifend, purus eget volutpat aliquam, ipsum enim porttitor ante, et vestibulum nibh sem ut nunc. In fermentum turpis orci, a ultricies dui ullamcorper nec.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean dictum mauris at luctus suscipit. Aenean ullamcorper orci in enim sagittis, et maximus quam venenatis. Proin bibendum dolor diam, vitae faucibus nunc pulvinar at. Mauris nunc erat, fringilla vitae nulla nec, lacinia vestibulum sem. Nulla nec nisl at risus aliquam venenatis eu lacinia lacus. Ut auctor nisi sit amet orci interdum, a finibus dolor fringilla. Maecenas sed lacus nisl. Ut blandit lorem urna, vel scelerisque tortor faucibus eget. Etiam nisi metus, placerat vel enim a, maximus semper libero.','page','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(23,'Care of your pet','top-header',NULL,'care of your animal is a good deeds','section',NULL,NULL);
+insert  into `pages`(`id`,`title`,`slug`,`image`,`description`,`type`,`created_at`,`updated_at`,`deleted_at`) values 
+(1,'Looking For a pet Care Center','about-us',NULL,'Find for Your Best Pet Care','page','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(2,'Care of Your pet','top-header',NULL,'care of your animal is a good deeds','section','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(3,'Terms and Condition','terms-and-conditions',NULL,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet justo, nec tempus lorem. Integer urna sapien, vulputate ac maximus eget, mollis id neque. Ut eu convallis arcu. Donec risus tortor, bibendum a lectus at, egestas posuere mi. In vel auctor risus, ut consequat orci. Nullam aliquet turpis eget suscipit tempor. Ut at orci nunc. Donec eu ante dapibus, scelerisque ligula vel, accumsan magna. Duis dignissim volutpat ex at gravida. Duis fermentum enim est, eu tempus turpis dapibus id. Aliquam condimentum sodales nisi tempus tempus. Vivamus fringilla ligula felis, ut efficitur neque facilisis congue. Cras pellentesque volutpat auctor. Quisque velit lacus, suscipit sit amet erat eu, lacinia blandit nunc. Aliquam ut eros iaculis, pellentesque tortor et, viverra nisl.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In augue massa, rutrum elementum lorem sed, tempus maximus lectus. Aenean tincidunt aliquam nibh blandit dapibus. Quisque fermentum enim blandit ante elementum fermentum. Nulla in malesuada nisl. Morbi ut auctor nisi, vitae congue purus. Phasellus eleifend, purus eget volutpat aliquam, ipsum enim porttitor ante, et vestibulum nibh sem ut nunc. In fermentum turpis orci, a ultricies dui ullamcorper nec.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean dictum mauris at luctus suscipit. Aenean ullamcorper orci in enim sagittis, et maximus quam venenatis. Proin bibendum dolor diam, vitae faucibus nunc pulvinar at. Mauris nunc erat, fringilla vitae nulla nec, lacinia vestibulum sem. Nulla nec nisl at risus aliquam venenatis eu lacinia lacus. Ut auctor nisi sit amet orci interdum, a finibus dolor fringilla. Maecenas sed lacus nisl. Ut blandit lorem urna, vel scelerisque tortor faucibus eget. Etiam nisi metus, placerat vel enim a, maximus semper libero.','page','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(4,'Privacy Policy','privacy-policy',NULL,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet imperdiet justo, nec tempus lorem. Integer urna sapien, vulputate ac maximus eget, mollis id neque. Ut eu convallis arcu. Donec risus tortor, bibendum a lectus at, egestas posuere mi. In vel auctor risus, ut consequat orci. Nullam aliquet turpis eget suscipit tempor. Ut at orci nunc. Donec eu ante dapibus, scelerisque ligula vel, accumsan magna. Duis dignissim volutpat ex at gravida. Duis fermentum enim est, eu tempus turpis dapibus id. Aliquam condimentum sodales nisi tempus tempus. Vivamus fringilla ligula felis, ut efficitur neque facilisis congue. Cras pellentesque volutpat auctor. Quisque velit lacus, suscipit sit amet erat eu, lacinia blandit nunc. Aliquam ut eros iaculis, pellentesque tortor et, viverra nisl.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In augue massa, rutrum elementum lorem sed, tempus maximus lectus. Aenean tincidunt aliquam nibh blandit dapibus. Quisque fermentum enim blandit ante elementum fermentum. Nulla in malesuada nisl. Morbi ut auctor nisi, vitae congue purus. Phasellus eleifend, purus eget volutpat aliquam, ipsum enim porttitor ante, et vestibulum nibh sem ut nunc. In fermentum turpis orci, a ultricies dui ullamcorper nec.\n\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean dictum mauris at luctus suscipit. Aenean ullamcorper orci in enim sagittis, et maximus quam venenatis. Proin bibendum dolor diam, vitae faucibus nunc pulvinar at. Mauris nunc erat, fringilla vitae nulla nec, lacinia vestibulum sem. Nulla nec nisl at risus aliquam venenatis eu lacinia lacus. Ut auctor nisi sit amet orci interdum, a finibus dolor fringilla. Maecenas sed lacus nisl. Ut blandit lorem urna, vel scelerisque tortor faucibus eget. Etiam nisi metus, placerat vel enim a, maximus semper libero.','page','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL);
 
 /*Table structure for table `password_resets` */
 
@@ -185,26 +176,28 @@ DROP TABLE IF EXISTS `services`;
 CREATE TABLE `services` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `slug` varchar(233) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `services` */
 
-insert  into `services`(`id`,`title`,`slug`,`image`,`description`,`created_at`,`updated_at`) values 
-(21,'est quod quae corrupti ex','sit-esse-ab','1653032345.png','Et atque earum quia. Quis aut vel voluptas voluptatem laborum enim. Quod non molestias unde perferendis enim. Aspernatur odio placeat ipsum necessitatibus iure exercitationem nesciunt. Est consequatur ut dolore provident velit sit cupiditate. Cupiditate cumque dicta consequatur. Perferendis omnis non et aperiam. Ut et ipsum maiores perspiciatis. Et possimus non saepe minus qui a et. Molestiae sed corporis aliquid.','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(22,'fugit ullam esse recusandae amet','dignissimos-architecto-voluptas','1653032326.png','Est et magni in qui eum cupiditate animi. Pariatur repudiandae quia quae vel totam qui. Eaque vero totam voluptatem aspernatur voluptatem quasi. Dolor quae non maiores numquam laudantium velit error. Quo aut sint iure nihil ex a. Adipisci ex ad consequatur eos ea. Dicta aperiam sapiente culpa non. Dolores id eum quis qui laborum corporis. Perferendis quia commodi ut et qui. Et et qui quasi tempore quos sunt quia.','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(23,'dolore facere sit aut facilis','eos-quibusdam-non','1653032336.png','Esse in non ut fuga at. Labore est qui voluptatibus nihil numquam quia vel et. Deserunt aspernatur accusantium consequatur ducimus. Architecto in architecto dicta. Ullam illum quia vel aut aut ipsum doloribus. Ut quis repudiandae ut iste. Quisquam aliquam corporis libero qui ut. Et est a in. Neque pariatur repellendus similique facilis ut voluptatem. Porro nam animi at omnis ut.','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(24,'omnis tenetur rerum optio vero','in-nesciunt-culpa','1653032336.png','Laudantium qui non rerum dolore qui. Illum reiciendis accusantium nesciunt qui possimus cum. Reprehenderit repellendus dolores quia sapiente ut. Ipsum voluptas sed voluptatum beatae animi impedit eius. Modi voluptates omnis nisi ut at autem debitis. Ut dolorem amet repellendus quia consequatur magnam. Deserunt ut laborum earum ab minus architecto eum. Nobis ut occaecati natus sunt. Id veritatis quisquam optio aut debitis sunt cum explicabo. Et ex ea beatae culpa voluptas.','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(25,'maxime et et excepturi maxime','facilis-sit-molestias','1653032326.png','Labore quisquam necessitatibus saepe occaecati. Laboriosam eum unde sint vitae quae et similique. Sint aperiam eaque perspiciatis et vel. Illum odit alias qui architecto cum qui fugiat. Id libero molestias neque sit quo aut qui. Voluptatum voluptatum sint ut. Dignissimos voluptas cum ullam voluptatem qui. Blanditiis exercitationem sint numquam molestias ea. Corporis consectetur suscipit et commodi quis quia at. Qui voluptas quibusdam totam rerum dignissimos expedita vel.','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(27,'voluptatem error cupiditate et at','dolorum-aliquam-dolor','1653032336.png','Praesentium fugiat explicabo in laboriosam ullam. Molestiae eum et fugiat quam. Eos quod molestias ad. Nobis autem aliquid et numquam dolorum repellendus alias. Optio voluptas fugiat repudiandae recusandae dolore. Doloremque exercitationem repellendus expedita nostrum fuga mollitia. Porro dicta et eligendi ut doloribus cupiditate modi. Ut id impedit unde quis necessitatibus reiciendis rem eos. Placeat nam in libero officia modi. Molestias illum unde dolor id.','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(28,'laboriosam necessitatibus quia eveniet voluptatum','qui-sint-delectus','1653032345.png','Et laudantium inventore aut deleniti inventore beatae tenetur. Esse voluptate iure dolorem molestias ullam et. Unde blanditiis eligendi veritatis ut. Et vitae ex deleniti nobis. Autem molestias esse eligendi nulla dolore. Illo minima alias numquam velit omnis. Consequatur iure aut quasi rerum eligendi quia veniam. Repellendus expedita nam aut. Accusamus occaecati recusandae hic sed. Veniam aut quaerat quia dignissimos.','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(29,'dolor non labore suscipit quis','delectus-cupiditate-aut','1653032345.png','Quia ea quos exercitationem magni nam vero minus. Aut ut quos praesentium quae assumenda sed. Dolor blanditiis quae voluptate aliquam possimus saepe delectus. Maiores vero rerum quo et veritatis ipsam nemo. Ut quasi est fugiat sint quia tenetur dolorem. Autem deleniti quisquam vel molestiae error. Maxime sed nam ea id quis qui. Saepe ut ipsam unde et aut alias et. Maiores sit voluptates illo occaecati nihil veritatis sunt. Illo at rerum consectetur magnam error et.','2022-05-20 06:24:02','2022-05-20 07:39:05'),
-(30,'deserunt recusandae recusandae quia quae','voluptatem-perspiciatis-velit','1653032336.png','Nihil eligendi sed accusamus est ab magni rerum. Deserunt quas necessitatibus sit recusandae. Ratione sunt expedita facilis sit. Ut magnam nisi pariatur laudantium quia incidunt porro. Praesentium rerum voluptatem quae aut. Debitis recusandae accusantium velit et est sit. Vitae ipsum non magnam perspiciatis dolorem sed suscipit. Accusantium consequatur ut laudantium et sint qui aliquid dicta. Modi delectus voluptatum quas quidem iste. Optio sint doloribus blanditiis.','2022-05-20 06:24:02','2022-05-20 07:38:56');
+insert  into `services`(`id`,`title`,`image`,`description`,`slug`,`created_at`,`updated_at`,`deleted_at`) values 
+(1,'aut voluptates','1654589678.png','Consectetur modi hic sed accusantium deleniti. Fugit qui eveniet omnis velit est. Omnis doloremque quia autem a. Enim enim mollitia aut quisquam voluptate. Est nobis eius sint labore ratione atque. Sunt eius suscipit et est sit. Facere deserunt doloremque odit tempore labore corrupti delectus nisi. Animi quo quia iure porro consequuntur illo. Ab ex cum fuga aut maxime. Facilis omnis et sunt perferendis et sequi at fuga.','ipsum-est-ut','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(2,'blanditiis culpa','1654589678.png','Ea occaecati eos dolor dolorem molestias quam blanditiis sed. Libero ut labore itaque neque architecto nulla ipsa. Sapiente molestiae aliquid minima ea aperiam at excepturi placeat. Suscipit consequatur qui est aliquid. Eum maxime quia reiciendis deserunt aperiam. Earum veritatis nihil saepe dolorem. Aperiam ut itaque mollitia rerum nihil ipsa autem. Aperiam rerum consequatur similique quia voluptatum quia. Porro consequatur culpa et sunt repudiandae sit quia. Earum ullam quaerat aperiam aliquam voluptate eum distinctio qui.','dolores-reiciendis-ipsum','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(3,'vel in','1654589678.png','Cumque accusamus eveniet aut magni iure mollitia maxime. Et reiciendis nam perspiciatis excepturi iste. Earum consequatur in dolorem quis. Eaque saepe in ut ex. Magni expedita quae expedita voluptas saepe minus voluptatem. Pariatur sint quae dolor omnis. Magnam architecto recusandae et aut nemo aliquam nesciunt. Suscipit architecto minima vel maxime dolorem. Non cum vel et voluptas eaque in unde. Sunt minima molestias vero necessitatibus.','culpa-aliquam-sapiente','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(4,'velit consequatur','1654589678.png','Sit quia expedita cupiditate enim dolores officia dolor. Quisquam et facilis cum accusamus et ipsa repellat distinctio. Sunt dicta consequuntur nulla sapiente repellat. Corporis qui fuga facilis dolorem est inventore assumenda ut. Voluptatibus est ab provident sit qui sequi magnam. Excepturi autem sequi nobis explicabo exercitationem voluptas. Est in omnis voluptatem sit fugiat et. In sit rerum commodi neque consequatur est eaque. Eligendi est dolorem aut eveniet nesciunt sequi dolores. Aut sit rerum aut voluptas totam aut ut enim.','amet-quos-cum','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(5,'delectus ut','1654589678.png','Voluptatem ipsam quia dicta minima. Aperiam ea laboriosam tempora porro facere. Quae necessitatibus eum non et. Aperiam molestiae quia sunt harum. Dolor eos ut maxime quod. Voluptatibus sunt unde laudantium et cum eos. Possimus amet quo eum non. Quae consequuntur odit dicta ut totam molestiae quibusdam dolor. Qui reiciendis amet reprehenderit quia error mollitia inventore. Accusamus cumque sed qui harum.','et-nesciunt-accusantium','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(6,'sed ex','1654589678.png','Rerum dolor similique architecto nostrum dolore beatae voluptatibus. Dolor quo consequuntur ut. Beatae ut assumenda incidunt reiciendis quia placeat sit. Dolorem delectus at enim asperiores nulla voluptates. Consequatur est alias rerum asperiores aut illo. Doloribus rerum blanditiis culpa doloremque quam placeat laboriosam. Impedit et dolores sit provident odit consequatur natus. Minus quis modi quia nesciunt ut dicta. Minima voluptatem voluptatem blanditiis ipsam quos voluptas. Sapiente beatae laborum ut expedita tenetur.','occaecati-nihil-hic','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(7,'quas accusantium','1654589678.png','Ipsum magni debitis et voluptatem. Qui possimus aut quo officia earum vel distinctio. Omnis sapiente tempore aut aut molestiae nisi. Dignissimos iste eveniet doloribus ut sed qui. Exercitationem esse ipsam quis corrupti vitae hic. Eos quia consectetur culpa. Iste sed fugiat voluptatem porro dolore reprehenderit. Dolorum voluptatem ab error voluptates. Consequatur quia in cum laborum amet cumque. Eos occaecati occaecati consequatur.','aspernatur-commodi-ea','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(8,'modi non','1654589678.png','Corporis temporibus cumque adipisci earum placeat sed quo perspiciatis. Amet ut et repellendus perferendis quisquam corrupti. Odit ducimus fuga beatae. At quibusdam doloribus cumque in beatae. Consequatur aperiam aut assumenda nam. Ut cupiditate et qui quis adipisci asperiores maxime. Sit culpa dolores corporis. Quidem iure laborum commodi voluptatibus. Et ab eos voluptas sed quaerat. A dolorem veniam ut architecto cum iusto esse.','quae-qui-sed','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(9,'minus ea','1654589678.png','Ut quia velit voluptate ducimus amet. Consequatur consectetur tempore facere officia ipsam at aliquid. Velit soluta aut voluptas quis aperiam. Dolorum itaque explicabo repellat est soluta. Eos ea sequi quisquam ea. Aut quos quis amet pariatur vitae natus molestias. Delectus minima sunt ipsum odit voluptatem. Ipsam nisi dolorem deserunt eos et aliquid maxime autem. Natus quo dolores quo odit voluptatem fugit. Nihil numquam excepturi dolores vel qui.','cupiditate-consequatur-possimus','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL),
+(10,'voluptatem consequatur','1654589678.png','Tenetur sit quae mollitia doloremque optio tempore ea. Molestiae amet dolorum doloribus maiores adipisci sed omnis voluptas. Ducimus ut alias aut explicabo quos. Nemo veniam quia quis temporibus a fugit. Fuga ex magni reprehenderit animi consequatur et rerum. Sed cupiditate maiores id neque est. Fugit placeat itaque ut id ipsam ut. Laudantium quod reprehenderit sit ipsum sed. Velit dolor qui veniam ut. Quo repudiandae rem at ut.','aut-exercitationem-eaque','2022-06-07 08:22:26','2022-06-07 08:22:26',NULL);
 
 /*Table structure for table `settings` */
 
@@ -218,17 +211,11 @@ CREATE TABLE `settings` (
   `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `settings` */
-
-insert  into `settings`(`id`,`title`,`link`,`image`,`type`,`created_at`,`updated_at`) values 
-(2,'demo@gmail.com <br> demo@gmail.com','https://www.facebook.com/','1653028751.png','address','2022-05-19 23:32:54','2022-05-20 06:39:11'),
-(3,'+01 1234567890','https://www.facebook.com/','1653028740.png','address','2022-05-19 23:33:22','2022-05-20 06:39:00'),
-(6,'fab fa-linkedin','https://www.facebook.com/',NULL,'social','2022-05-19 23:36:33',NULL),
-(7,'fab fa-instagram','https://www.facebook.com/',NULL,'social','2022-05-19 23:36:35',NULL),
-(8,'fab fa-facebook','https://www.facebook.com/',NULL,'social','2022-05-19 23:36:38',NULL);
 
 /*Table structure for table `users` */
 
@@ -245,70 +232,21 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `users` */
 
 insert  into `users`(`id`,`name`,`email`,`email_verified_at`,`password`,`remember_token`,`created_at`,`updated_at`) values 
-(1,'Dr. Obie Cruickshank PhD','troy82@example.net','2022-05-20 05:43:54','$2y$10$vmoCsUO4S2PQsehd2PYUV.SuKmcMhdQBzojo8520wVdYKA4Rhj8ga','NEupIcgjMwb83gARYJLmITMVYG1xRbIPfr2rFxpdaGO4Qt34sqI8MROt00nU','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(3,'Dr. Christine McClure','otilia24@example.org','2022-05-20 05:43:55','$2y$10$pJzer9ZkOHzWIPDnYXMplONDWaFe8y8G8wr3bY/wycGtPoXzZxM1u','9uUZYl9VuM','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(4,'Regan Mayer V','liza.halvorson@example.com','2022-05-20 05:43:55','$2y$10$Rp5dQE.QZdIpicNUYDT0De.0HWuYQD/MMo9gGlsBYLYsFFWMe.zca','OdL9rwnWfH','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(5,'Millie Kautzer','srosenbaum@example.com','2022-05-20 05:43:55','$2y$10$hikFJJuwssFI.aZ8gZKllOYfY0QnUpMMfkI126TtJbSuDdmPgAWii','FAbsYFL2C5','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(6,'Dr. Jules Bradtke','macey12@example.net','2022-05-20 05:43:55','$2y$10$N0InuxNkR.yxxvPCZwrPBe/abeVf/rqS4xJGZ2CBbpxt6QXA8AuUW','XWf4nz1l1n','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(7,'Aleen Parisian','zhaag@example.com','2022-05-20 05:43:55','$2y$10$7T78LwNLl9pq2zo9Pg9qO.dJYABzv16XJxEfWyHfrMI2DL63mTdHi','cuB9qw2z0P','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(8,'Jason Cremin','lorenz31@example.net','2022-05-20 05:43:55','$2y$10$yPW9//kdAMmaTx6b36BYk.lAvGp0K76KaagJ5ZXvZ5yuk3vjkGMLu','SHVVeecKZq','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(9,'Vivienne Walker','lking@example.com','2022-05-20 05:43:55','$2y$10$f3NqSCvMBg5mp41rMOh0meyQkvNvDH2a5O39lXYo4fXXUVYI6ri4S','T4u1rHVNHK','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(10,'Mr. Roosevelt Legros','veum.onie@example.org','2022-05-20 05:43:55','$2y$10$JhErZazZ/TmXHNUD3BHJvufn.Ck/o9UZf2ofo3j2m3QmPt9r8APpu','tig109Vo0v','2022-05-20 05:43:56','2022-05-20 05:43:56'),
-(11,'Augusta Bayer IV','ykunze@example.com','2022-05-20 06:23:40','$2y$10$l.YK6JDbABnaBtJ5uZ4Ip.Okl0rNp94YI.Lf8s.Tx.A4RBIMpc/3y','RhwZtWmX2l','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(12,'Prof. Raymond Prosacco','margarita.robel@example.org','2022-05-20 06:23:40','$2y$10$Q6.tIZhmGfesmbbOsTv9NuXH/78zhDlbt0GIij1EPAk0TNZVict8C','Yq263I5kog','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(13,'Ford Hamill','marcel.russel@example.org','2022-05-20 06:23:40','$2y$10$pELJURj5/7W4q48D7A5feutDwz4jPxen0TTVGT3venYP3v3jLLHL2','LIXyHGOaI7','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(14,'Osbaldo Ortiz DDS','hammes.ashley@example.com','2022-05-20 06:23:40','$2y$10$xfDUeD8oNcNG/6zt8v4cvevjZvl57FQwIbUOqcCkdA9bqc6Tt11CK','uN5KlI5gEX','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(15,'Jailyn Renner','berenice01@example.net','2022-05-20 06:23:40','$2y$10$AXJiFpOS30LGaA/sAHVpQOc2/FWvzwP1XAVoSNicMeudNx81Gn7hy','NzLQCtMsSX','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(16,'Prof. Haylie Spinka MD','dedrick04@example.org','2022-05-20 06:23:41','$2y$10$GUgljcimpqRz2TVGOQnVG.2WplZM4a7qadTwPlP8HyqwpL7MhkM5W','w2ysSYYnT6','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(17,'Dennis VonRueden','rowe.destiney@example.net','2022-05-20 06:23:41','$2y$10$CV7Hf7b2NZDR9Bjx/01a1exe5eqEharSqUQQ2l9uIoBiIVgqa2OD6','CAxOUlK4Fz','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(18,'Ruth Collins','horacio36@example.net','2022-05-20 06:23:41','$2y$10$ig.y/b4f.rsJ8wl2UJxKiehb/bKDXADRLR1jQwYiravteHgicAJ2O','UgCa1WjFib','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(19,'Dr. Travis Graham V','toni79@example.com','2022-05-20 06:23:41','$2y$10$Yfsmn0oJ/f/jJ4fpricTpebIpv5G9bvuxK2MvgFQGY43I3XcFF/ny','L6K61FQFwK','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(20,'Collin Baumbach','uhartmann@example.org','2022-05-20 06:23:41','$2y$10$Ub.oslAYg30mIVoDzAPjLe7Dbw08AxhbnakoEidG3PlchRHB2dBjS','DgVtDpxml1','2022-05-20 06:23:41','2022-05-20 06:23:41'),
-(21,'Prof. Reyes Parisian','effertz.merl@example.com','2022-05-20 06:24:01','$2y$10$7HFnku6m5S/nUzucjBXi4u9h0Fl2t8KnR5.gP3k.SRCfKwPIwarqe','W5t5MWpljG','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(22,'Fiona Hettinger','eladio.oconnell@example.net','2022-05-20 06:24:01','$2y$10$vNyJwqASabQJ9sZWjdk4puRllUb2zw6lF5NLia049VMzxJZ7rIRvS','u0QDe2VM4Q','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(23,'Kay Gusikowski','heidenreich.tremaine@example.net','2022-05-20 06:24:01','$2y$10$l/IkmIAYtUylvrivMSpTNuT.YahP0EI9xeufClQT4JzzLwit.2EEO','P6MPGql9DQ','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(24,'Alexandrine Stark','xgutmann@example.net','2022-05-20 06:24:01','$2y$10$E9w98Ab3EywNHXq52/p.0.bQrZOEK8zf3mjOnvhGEabyzZchWc3aC','1EyWuOL7eh','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(25,'Rosalia Weber','ronaldo.tremblay@example.org','2022-05-20 06:24:01','$2y$10$L2/xCU7Ow5uedU.hQ0vYS.yp/aSrVK/letEDrYye5yKK/7KDFIU3m','k9H1e8c1WY','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(26,'Alexandria Nikolaus','yessenia63@example.org','2022-05-20 06:24:01','$2y$10$B4wor8G8mbMibigTEfl3k.fC38bjGJsa8zzyG1jX6AxMK.1uBS2D.','0UetNcsVoy','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(27,'Miss Elvera Hermann','halvorson.deja@example.com','2022-05-20 06:24:01','$2y$10$bdBICW2afxZmZk9JMvXuZ./elwvf4sDhOKR95yXPsVCuZJ/OPLh62','iE6LQX6yGJ','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(28,'Prof. Osbaldo Toy MD','beatty.fredy@example.net','2022-05-20 06:24:02','$2y$10$yMFGjIeytYfRlZiacZ6KJOd1iVWAuSMxRcKwIKST2oFWbI2JHHiGi','QdJBGnObFs','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(29,'Ena Wilkinson','gilda.quigley@example.org','2022-05-20 06:24:02','$2y$10$q4xefYvnphOtxfNrFP.9UeLlYf6cUFS6qI6i8CRNiCX9RoUaaSeyW','rnYrFC4v1a','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(30,'Marianne McGlynn','oberbrunner.bradford@example.org','2022-05-20 06:24:02','$2y$10$D8B985VNZQhZtFjFFbo4y.asSb4OsTohxUf2zlZZZ5kC57vuwg9qe','JWA7pVkw9N','2022-05-20 06:24:02','2022-05-20 06:24:02'),
-(31,'Dr. Della Howell','rohan.johnpaul@example.org','2022-05-20 08:26:42','$2y$10$juY2UwygsiOdQ2NBcJjBeuYvfgLzM7aliMGhAuhjC2I17eORAg8eO','kMcDkDEYOx','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(32,'Elwin Murphy','robin.douglas@example.com','2022-05-20 08:26:42','$2y$10$9js1RAPHONhkwQmart7SueHMRU4ozi8zQgqufRyVaWhPL4wGf/kyu','NLmN3LksFa','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(33,'Burnice Reichert','uquitzon@example.net','2022-05-20 08:26:42','$2y$10$.PEbhly2jf0RxgQyCgGEQeItSxR5MIwwzdufsM/TfcNFeJLECpfsu','UU6UWoqEyN','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(34,'Remington Kohler','cindy.graham@example.org','2022-05-20 08:26:42','$2y$10$SMGRK7pHo6ZQ8o0dkCg7g.MTN65A83p87lI6MVRpqJRHdniDHwZIi','5K9g55XNH7','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(35,'Mrs. Bernice Sauer V','wintheiser.matteo@example.org','2022-05-20 08:26:42','$2y$10$/WArzU2SuyrnoNK4VaJCcuFz0hxhuuzrKcz19sVYuxEVkDDqktWKO','0BceWmCW2P','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(36,'Carlotta Kassulke III','hill.edyth@example.com','2022-05-20 08:26:42','$2y$10$CQ5Z0B6X5MhwRVayw6vdcOmNZBucFY50yNnM5GXbr3jLJHeS5D3SS','vfbusetQT4','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(37,'Dr. Christy Gleichner','cronin.wallace@example.org','2022-05-20 08:26:43','$2y$10$cN8PDkDYFwGU3hg1M55EduW5QdMNblirPnhvHm5IvcSi6grHdo2jS','GQ4B3GyTCm','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(38,'Luis Nienow','wilderman.timothy@example.org','2022-05-20 08:26:43','$2y$10$qCVcRKhiLNCjZcjCYaZMFesPmLor7qS9AvQQGwaJA5A5NUolWyWke','j1aV7iT7zp','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(39,'Prof. Emie Fahey','cwaelchi@example.net','2022-05-20 08:26:43','$2y$10$bdu3Z6.8ovXaQkYfplQC4u5mjPqr6S.sjjuxyiAmEqqVdlC0mN5iC','x1kwhcXUXk','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(40,'Madaline Hirthe','istark@example.net','2022-05-20 08:26:43','$2y$10$8mPNAi4nkIzIuvdgnyhZkeIMpQXMetAI6XgFXDrgkLc2rrFqPChJ6','52vs4LzB85','2022-05-20 08:26:43','2022-05-20 08:26:43'),
-(41,'Gabe Waelchi MD','usporer@example.org','2022-05-20 08:41:02','$2y$10$OF02Li1MlD7vIRfGbM4iNuAKNrPbWa.ovjvLkNYf8qSzVQ776.kPW','PgIPxRYMOt','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(42,'Ramiro Schamberger','mayer.rowena@example.net','2022-05-20 08:41:02','$2y$10$WFgTi.E6nNtM1Q1RmJcroOlebsWvBDw7iUbDA9VfG/CDgMR.u20jy','SQTi26dQSb','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(43,'Tatyana Rosenbaum','cleve18@example.net','2022-05-20 08:41:02','$2y$10$axkjcraCUHGVlku/sRyAX.nZzd3O4tEcmyeypc1dGRNzmASzh6/zS','pVYC6M9hlt','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(44,'Elvis Zemlak','delbert60@example.com','2022-05-20 08:41:02','$2y$10$2qBO82tHzZ5WVSPcL6bjOOUwVZSPMnUNpfIQIAVIaW.dm3u8G/eBK','8PvRLs6xu1','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(45,'Dr. Princess Block Sr.','grimes.sandy@example.org','2022-05-20 08:41:02','$2y$10$ReK49FDDMhJ0ONpD6H13JuiKvvP1Gwi9yqq0yeMObthb7ebJutPba','kPsFubycaR','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(46,'Prof. Joyce Gusikowski','rahsaan77@example.net','2022-05-20 08:41:02','$2y$10$cJSowjL4WtGghq5xBKDUYePwVkiWqAldGTSx4IR445M/JIa59jiqO','Vq2YUb9qpq','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(47,'Adrienne McGlynn','salma.kuphal@example.com','2022-05-20 08:41:02','$2y$10$YAbtTUA/EQAiaRPIK5OJ.euFv5f14vNeIJwCQGhnxau.2jr7bzA06','nw6zjpRa9K','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(48,'Miss Nelda Schimmel','swift.aurelio@example.org','2022-05-20 08:41:03','$2y$10$bvK7HDUvyfu6ME6k/C2Ea.461r7ECbDihS6z7ObarUcknvjvKCDlG','B4Bg4Xm9O8','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(49,'Elfrieda Sawayn','bernadette.cartwright@example.com','2022-05-20 08:41:03','$2y$10$Sd8kPD84yeWsvoRZ5qX9gewkI5zoycuz0aX14dGLAcJL.abf7fmcK','xdJMmLbqy3','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(50,'Aniya Armstrong III','zborer@example.org','2022-05-20 08:41:03','$2y$10$KRuUDCXKg2.d0V8Pjw5VeOp5cuG4RilwQTUJzuSY.TwN5oFB.uLri','MNCk3zN4Kx','2022-05-20 08:41:03','2022-05-20 08:41:03'),
-(51,'Milan Schimmel Sr.','ohara.trisha@example.org','2022-05-21 21:03:55','$2y$10$NLEaDvgLGhqMNNwpKMHln.brJBaty7le4nJXDYFTppJ0xJ5IMSLIi','wLb2JQNuWd','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(52,'Oma McCullough','tiara96@example.org','2022-05-21 21:03:55','$2y$10$AFN/H1xRz7QSQxYeIMdHAeIxuMwUFljb86Ex.3PHKLA4fjidoJZti','VDndvRDEpx','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(53,'Gunnar Schoen','kuvalis.lorenza@example.net','2022-05-21 21:03:55','$2y$10$hxyjpPzOYRwuEpb/rEPyKO52yHKLgrFfM3AAuZGrSw9AL346l5o2C','T7aYl8rbkD','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(54,'Gussie Daniel','jerry89@example.org','2022-05-21 21:03:55','$2y$10$Pvxil9JxQTLvqfIT.oLX3erFRd1F2mciBjdMm.c/SPNakLSePEise','FIAvRHy461','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(55,'Omari Klocko II','miller.shanny@example.net','2022-05-21 21:03:55','$2y$10$obo4S6/jLbjnE7RV0NwLAuCdzaHftuPBT6J4ihgmmdkytH5IcerLa','HL272Npb24','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(56,'Ms. Dejah Leannon I','stephan59@example.net','2022-05-21 21:03:55','$2y$10$3ke0wJUQH0oWyqDzUaUP.Ol3rvR4W3cDabh6VyyVQ.RN5M8Zrc6ou','XsCErKFRyk','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(57,'Dr. Jackie Metz','julian24@example.com','2022-05-21 21:03:55','$2y$10$mVrb0p5r6Ze1vK7R4ciZGOozZqYvtbz7bjBP1fZ2MjRdKf5QQuRM2','iORWva0Bb9','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(58,'Jada Parker','emely.ohara@example.net','2022-05-21 21:03:56','$2y$10$yfkAdcZHikAMfj.x/u/Mu.YmgTg2Z4o6o.BFLlhqgH4p4P4oArb8m','ZmSsbdjDCx','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(59,'Mr. Taylor Hudson','leonie53@example.org','2022-05-21 21:03:56','$2y$10$Q599W9EAgrK.US3vDb1LquT7G3Pj8ViX/GrcXbRQZor.g2Zv0o/e.','VzRVj8J7R9','2022-05-21 21:03:56','2022-05-21 21:03:56'),
-(60,'Josephine Ledner','echamplin@example.com','2022-05-21 21:03:56','$2y$10$FZZZ7CRmd5DTCJfp66T51O6He288VQOhnutJqnjgpmzRtXMWwwKqy','IiZo600HoB','2022-05-21 21:03:56','2022-05-21 21:03:56');
+(1,'Dr. Marguerite Roberts','jfay@example.net','2022-06-07 08:22:25','$2y$10$N/dnTc8qgvcjEnda/cuXB.J2eq1O8xebALL25Y3QzjcTsprexLemi','0Is0DpQN5x','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(2,'Kira Cronin','americo.bailey@example.com','2022-06-07 08:22:25','$2y$10$efbVltsv/SRzNWrrv/ism.H5ueh/NmOzKEKPKOWsaKGAXYDOnbxze','eu7wCJHTtW','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(3,'Luciano Welch','keeley.powlowski@example.org','2022-06-07 08:22:25','$2y$10$Bj0M1guv3ox5i9Q.k5k1yO02f4yqhW1ygbLidpMGrYEO2KQBPcXzO','Q0hRBNIfg7','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(4,'Miss Naomi Rau DDS','quinton44@example.com','2022-06-07 08:22:25','$2y$10$IDglICFYtst.zc1QF.I0LO1Aq3VppAgOIhxEjvSLKMm6Tnz9WY9GW','jXqfDfV2WX','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(5,'Mr. Arthur Dach','vonrueden.frida@example.net','2022-06-07 08:22:25','$2y$10$y9P.sRGWL/oPhwkxI3kSQuxzmHxll2vA3ci7oXAPm.EsIXlT5lmSW','g7pgSz0iWm','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(6,'Freddy Bartoletti','esteban34@example.org','2022-06-07 08:22:26','$2y$10$tHfw8cM9cV8ev5VXyd2CYukZJGRt0eNR0N5lVgzJKBedPGSGkZnEG','G65RiMyk5B','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(7,'Rafael Wuckert','mohr.narciso@example.com','2022-06-07 08:22:26','$2y$10$dpdLVHFlV3jtXVq78FsnAe/6P/XTjPY/P/CzUzhInizQcrllPxOsK','MsQovR7FhW','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(8,'Ms. Etha Schaden','ella.ohara@example.net','2022-06-07 08:22:26','$2y$10$jO.eVa9aTOthmqNxAbws8OXQ.MqLf7Ehh1safDVtcqDGogUt6D0ZC','H3l7ZoyqBW','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(9,'Litzy Tromp','bfeest@example.net','2022-06-07 08:22:26','$2y$10$FShmwOEwiHiI6u6LUwILlOLK/xGJWMU4gskgwgSIptAdrtuLKoYSq','3CWB90JGnY','2022-06-07 08:22:26','2022-06-07 08:22:26'),
+(10,'Mr. Isadore Ritchie PhD','elenor84@example.org','2022-06-07 08:22:26','$2y$10$lzVeJkvh0J.dQR7pYuZZn.Ij.t26dEPLDWbCpsvtAUe8oWMXQbAKa','BTRPluUPJk','2022-06-07 08:22:26','2022-06-07 08:22:26');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

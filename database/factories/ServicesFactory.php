@@ -15,7 +15,7 @@ class ServicesFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->words(5, true),
+            'title' => $this->faker->words(2, true),
             'slug' => Str::slug($this->faker->words(3, true)),
             'description' => $this->faker->sentences(10, true)
         ];

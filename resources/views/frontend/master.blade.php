@@ -15,6 +15,7 @@
     <link href="{{asset('front')}}/css/style.css" rel="stylesheet">
     <link href="{{asset('front')}}/css/responsive.css" rel="stylesheet">
     <title>Pet World</title>
+    <script src="{{ asset('jquery-3.5.0.min.js') }}"></script>
 </head>
 <body>
 <!-- Button trigger modal -->
@@ -164,5 +165,7 @@
         </div>
     </div>
 </footer>
+<script src="{{ asset('/assets/js/notify.min.js') }}"></script>
+<script src="{{ asset('main.js') }}"></script>
 </body>
 </html>

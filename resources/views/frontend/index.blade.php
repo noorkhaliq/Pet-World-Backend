@@ -98,33 +98,27 @@
                         @csrf
                         <div class="row">
                             <div class="col-md-12 mb-5">
-                                <input type="text" class="contactus h-100  fw-normal w-100  form-control"
-                                       placeholder="Name" name="name" required="required">
+                                <input type="text" class="contactus h-100  fw-normal w-100  form-control" placeholder="Name" name="name" required="required">
                                 <span class=" alert-text text-danger error-text name_error "></span><br>
                             </div>
 
                             <div class="col-md-12  mb-5 ">
-                                <input type="number" class="contactus h-100 fw-normal w-100 form-control"
-                                       placeholder="Phone number" name="phone" required="required">
+                                <input type="number" class="contactus h-100 fw-normal w-100 form-control" placeholder="Phone number" name="phone" required="required">
                                 <span class="alert-text text-danger error-text phone_error"></span><br>
                             </div>
 
                             <div class="col-md-12  mb-5">
-                                <input type="email" class="contactus h-100 fw-normal w-100  form-control"
-                                       placeholder="Email Address" name="email" required="required">
+                                <input type="email" class="contactus h-100 fw-normal w-100  form-control" placeholder="Email Address" name="email" required="required">
                                 <span class=" alert-text text-danger error-text  email_error"></span><br>
                             </div>
 
                             <div class="col-md-12 mb-4">
-                                <textarea class="textarea w-100  fw-normal form-control" placeholder="Message"
-                                          type="text" name="message" required="required"></textarea>
+                                <textarea class="textarea w-100  fw-normal form-control" placeholder="Message" type="text" name="message" required="required"></textarea>
                                 <span class=" alert-text text-danger error-text message_error"></span><br>
                             </div>
 
                             <div class="col-md-12">
-
-                                <button  type="submit" class="button btn bg-dark text-light text-center ">
-                                    <i class="loading-icon fa fa-spinner fa-spin hide " style="margin-right: 11px;"></i>
+                                <button  type="submit" class="button btn bg-dark text-light text-center "><i class="loading-icon fa fa-spinner fa-spin hide " style="margin-right: 11px;"></i>
                                     <span class="btn-txt">Send</span></button>
                             </div>
                         </div>
@@ -142,37 +136,14 @@
     </div>
 
 
-
-    <script src="{{ asset('jquery-3.5.0.min.js') }}"></script>
-    <script src="{{ asset('main.js') }}"></script>
-    <script>
-        $(document).ready(function() {
-            $(".button").on("click", function() {
-                $(".result").text("");
-                $(".loading-icon").removeClass("hide");
-                $(".button").attr("disabled", false);
-
-            });
-        });
-
-        $(document).ajaxSend(function() {
-            $(".loading-icon").show();
-
-        })
-        $(document).ajaxComplete(function() {
-            $('.loading-icon').hide();
-        });
-    </script>
     <style>
+
         .button:disabled {
             opacity: 0.9;
         }
         .hide {
             display: none;
         }
-    </style>
-
-    <style>
         .responsive-map{
             overflow: hidden;
             padding-bottom:56.25%;
@@ -187,5 +158,4 @@
             position:absolute;
         }
     </style>
-
 @endsection

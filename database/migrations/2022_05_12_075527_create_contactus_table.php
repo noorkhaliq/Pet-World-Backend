@@ -18,8 +18,10 @@ class CreateContactusTable extends Migration
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
-            $table->string('message')->nullable();
+            $table->text('message')->nullable();
+            $table->string('is_replied')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

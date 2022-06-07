@@ -57,23 +57,20 @@
 
             })
 
-            $('body').on('click', '.deleteUser', function(e){
+
+            $('body').on('click', '.deleteUser', function (e) {
+                e.preventDefault();
+                var url = $(this).attr('href');
                 if (confirm("Are you sure?")) {
-                    var data = $(this).val();
-                    $.post('requests/seminars.php', {delete_sem: data}, function(data) {
-                        if (data == "delete") {
-                            location.reload();
-                        }else{
-                            alert(data);
-                        };
-
-                    });
+                    $.ajax({
+                        url: url,
+                        type: 'get',
+                        success: function() {
+                            table.ajax.reload();
+                        }
+                    })
                 }
-
             });
-
-
-
 
         });
     </script>
